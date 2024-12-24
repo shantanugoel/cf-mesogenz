@@ -1,0 +1,10 @@
+name = "cf-mesogenz"
+main = "build/worker/shim.mjs"
+compatibility_date = "2024-12-24"
+
+routes = [
+  { pattern = "genz.shantanugoel.com", custom_domain = true }
+]
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
